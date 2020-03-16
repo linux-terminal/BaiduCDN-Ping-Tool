@@ -70,7 +70,7 @@ function mping(){
 	echo -e "\033[42;37m 正在进行Ping测试，请稍后... \033[0m"
 	echo '---------------------------------------------------------------------------'
 
-	while(( $num<10 ))
+	while(( $num<21 ))
 	do
 		ping ${dnsip[$num]} -c $pnum > /tmp/${dnsip[$num]}.txt
 		echo -e "\033[41;33m【${location[$num]}】\033[0m" - "\033[34m${dnsip[$num]}\033[0m"
